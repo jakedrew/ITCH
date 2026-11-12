@@ -1,0 +1,4 @@
+http-server.jakedrw.com {
+    reverse_proxy http-server:1121 {
+    }
+}
