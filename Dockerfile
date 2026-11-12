@@ -18,4 +18,4 @@ RUN apk add --no-cache ca-certificates libstdc++ libgcc
 COPY --from=builder /app/build ./build
 
 EXPOSE 1121
-CMD ["./build/http-server"]
+CMD ["./build/itch"]

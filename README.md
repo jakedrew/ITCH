@@ -1,5 +1,4 @@
-# http-server
+# ITCH
 
-Testing integrating a C++ Server into my website. 
 
-This is just a base template repo for future projects where all Caddy imports etc has been tested.
+Data sources from https://emi.nasdaq.com/ITCH/Nasdaq%20ITCH/ I decided to start with 03272019.NASDAQ_ITCH50.gz.
