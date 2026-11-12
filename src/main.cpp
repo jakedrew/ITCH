@@ -35,8 +35,9 @@ int main() {
       "text/event-stream",
       [](size_t offset, httplib::DataSink &sink) {
 
-        std::string message = streamRequest();
-        sink.write(message.data(), message.size());
+        std::string message = "data: " + streamRequest() + "\n\n";
+        if (!sink.write(message.data(), message.size()))
+            return false;
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
         return true;
